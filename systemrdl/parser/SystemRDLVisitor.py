@@ -371,6 +371,7 @@ class SystemRDLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemRDLParser#enum_def.
     def visitEnum_def(self, ctx:SystemRDLParser.Enum_defContext):
+        print("im in enum - SystemRDLVisitor.py")
         return self.visitChildren(ctx)
 
 
